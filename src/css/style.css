@@ -82,6 +82,11 @@ img {
   border-radius: 10px;
 }
 
+.input:focus {
+  outline: none;
+  border: 1px solid #ffd200;
+}
+
 /* Импорт стилей шапки */
 .navbar {
   padding: 8px 0;
