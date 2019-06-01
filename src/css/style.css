@@ -75,9 +75,14 @@ img {
   display: block;
 }
 
+.section-contacts {
+  font-size: 15px;
+  line-height: 24px;
+}
+
 .input {
   border: 1px solid #dddddd;
-  padding: 20px 42px;
+  padding: 20px 26px;
   font-size: 15px;
   border-radius: 10px;
 }
@@ -316,8 +321,8 @@ img {
 }
 
 .offer__subtitle {
+  display: block;
   max-width: 250px;
-  font-size: 16px;
   margin-bottom: 30px;
 }
 
@@ -342,21 +347,17 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .offer__contacts {
-  line-height: 24px;
-  font-size: 15px;
-}
-
-.offer__manager {
   max-width: 50%;
   margin-top: 30px;
   padding-right: 20px;
 }
 
-.offer__manager:last-child {
+.offer__contacts:last-child {
   padding-right: 10px;
 }
 
