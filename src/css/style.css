@@ -62,7 +62,7 @@ img {
 }
 
 .section {
-  padding: 90px 0;
+  padding: 150px 0;
 }
 
 .section-title {
@@ -82,7 +82,7 @@ img {
 
 .input {
   border: 1px solid #dddddd;
-  padding: 20px 26px;
+  padding: 23px 26px;
   font-size: 15px;
   border-radius: 10px;
 }
@@ -296,6 +296,7 @@ img {
   background-position: center right;
   background-size: contain;
   position: relative;
+  padding-top: 55px;
 }
 
 .offer:before {
@@ -317,7 +318,7 @@ img {
 .offer__title {
   max-width: 360px;
   line-height: 35px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .offer__subtitle {
@@ -353,7 +354,7 @@ img {
 
 .offer__contacts {
   max-width: 50%;
-  margin-top: 30px;
+  margin-top: 25px;
   padding-right: 20px;
 }
 
