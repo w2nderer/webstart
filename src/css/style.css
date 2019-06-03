@@ -67,6 +67,7 @@ img {
 
 .section-title {
   font-size: 24px;
+  text-align: center;
   font-family: "Museo Sans Bold", sans-serif;
   font-weight: 700;
 }
@@ -90,6 +91,10 @@ img {
 .input:focus {
   outline: none;
   border: 1px solid #ffd200;
+}
+
+.arrows__left, .arrows__right {
+  cursor: pointer;
 }
 
 /* Импорт стилей шапки */
@@ -319,6 +324,7 @@ img {
   max-width: 360px;
   line-height: 35px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -392,6 +398,37 @@ img {
     width: 100%;
     padding-right: 0;
   }
+}
+
+/* Стили для блока portfolio */
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  max-width: 800px;
+  margin: auto;
+  font-size: 30px;
+  line-height: 45px;
+  color: #333333;
+  padding-bottom: 99px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 68px;
+}
+
+.slider__image {
+  margin: auto;
 }
 
 /* Стили модального окна */
