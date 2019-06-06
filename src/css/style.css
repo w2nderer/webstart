@@ -553,6 +553,208 @@ img {
   }
 }
 
+/* Стили для блока brif */
+.brif {
+  margin-top: 35px;
+  background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
+  background-position: left center, center right;
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat;
+}
+
+.brif-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brif__interview {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.brif__form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 210px;
+  text-align: center;
+}
+
+.brif__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 20px;
+}
+
+.brif__button {
+  height: 70px;
+  width: 100%;
+  max-width: 370px;
+  margin-top: 17px;
+  margin-bottom: 30px;
+}
+
+.interview {
+  padding-right: 60px;
+}
+
+.interview__title {
+  margin-bottom: 45px;
+  font-size: 22px;
+  line-height: 31px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+}
+
+.interview__subtitle {
+  display: block;
+  margin-bottom: 95px;
+  font-size: 16px;
+}
+
+.interview-list {
+  list-style: none;
+  padding: 0;
+}
+
+.interview-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+}
+
+.interview-list__counter {
+  display: inline-block;
+  margin-right: 30px;
+  width: 35px;
+  height: 35px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 32px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+}
+
+.interview-list__text {
+  font-size: 18px;
+  max-width: 390px;
+}
+
+.form__title {
+  margin-bottom: 50px;
+  line-height: 30px;
+  font-size: 22px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+}
+
+.form__subtitle {
+  display: block;
+  margin-bottom: 45px;
+  font-size: 16px;
+}
+
+.form__description {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .brif__form {
+    padding-left: 30px;
+  }
+  .interview {
+    padding-right: 30px;
+  }
+  .interview__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .interview__subtitle {
+    margin-bottom: 40px;
+  }
+  .interview-list__counter {
+    margin-right: 20px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 280px;
+  }
+  .form__title {
+    font-size: 20px;
+    margin-bottom: 55px;
+  }
+  .form__subtitle {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .brif {
+    background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
+    background-position: left center, center right;
+    background-size: 50%, cover;
+    background-repeat: repeat-y, no-repeat;
+  }
+}
+
+@media (max-width: 770px) {
+  .brif {
+    padding-top: 25px;
+    background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
+    background-position: top center, center bottom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+  }
+  .brif-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brif__form {
+    margin-top: 150px;
+    padding: 0 3px;
+  }
+  .interview {
+    padding: 0 3px;
+  }
+  .interview__title {
+    margin-bottom: 10px;
+    padding-right: 20px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .interview__subtitle {
+    width: 100%;
+    max-width: 190px;
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+  .interview-list__counter {
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+  .interview-list__text {
+    max-width: 250px;
+  }
+  .form__title {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .form__subtitle {
+    font-size: 14px;
+    line-height: 23px;
+  }
+}
+
 /* Стили модального окна */
 .modal {
   position: fixed;
