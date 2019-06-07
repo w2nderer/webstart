@@ -88,9 +88,14 @@
             дизайн-проекта!</span>
           <!-- /.section-subtitle -->
           <form action="#" class="form offer__form" id="offer-form">
-            <input type="text" name="username" required maxlength="15" class="input offer__input"
-              placeholder="Ваше имя">
-            <input type="tel" name="phone" required class="input offer__input phone" placeholder="Ваш телефон">
+            <div class="offer-form__wrap">
+              <div class="offer-form__input">
+                <input type="text" name="username" required class="input offer__input" placeholder="Ваше имя">
+              </div>
+              <div class="offer-form__input">
+                <input type="text" name="phone" required class="input offer__input phone" placeholder="Ваш телефон">
+              </div>
+            </div>
             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
           </form>
           <div class="offer-contacts">
@@ -302,6 +307,8 @@
     new WOW().init();
     $(document).ready(function () {
       $("#brif-form").validate({
+        errorElement: "div",
+        errorClass: "invalid",
         rules: {
           username: {
             required: true,
@@ -331,6 +338,8 @@
         }
       });
       $("#offer-form").validate({
+        errorElement: "div",
+        errorClass: "invalid",
         rules: {
           username: {
             required: true,
@@ -351,7 +360,7 @@
           }
         }
       });
-      $('.phone').mask('+7 (999) 999-99-99');
+      $('.phone').mask('8 (999) 999-99-99');
       $('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,

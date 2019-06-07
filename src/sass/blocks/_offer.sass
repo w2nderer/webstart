@@ -12,7 +12,17 @@
   left: 0
   position: absolute
   background-color: #ffffff
-  
+ &-form
+  &__wrap
+   display: flex
+   justify-content: space-between
+   flex-wrap: wrap
+  &__input
+   display: flex
+   flex-direction: column
+   align-items: center
+   width: 100%
+   width: 240px
  &-block
   width: 50%
   padding-right: 91px
@@ -27,11 +37,12 @@
   max-width: 250px
   margin-bottom: 30px
  &__input
-  margin-bottom: 30px
+  margin-bottom: 10px
   width: 240px
   &:first-child
-   margin-right: 10px
+   margin-right: 5px
  &__button
+  margin-top: 20px
   width: 100%
   min-height: 70px
  &-contacts
@@ -50,6 +61,7 @@
   color: $text-color
   font-size: 15px
   +bold
+
  
     
 @media (max-width: 1200px)
