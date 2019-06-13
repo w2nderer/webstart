@@ -280,8 +280,7 @@
 
   </main>
   <footer class="footer">
-    <div class="map" id="map">
-    </div>
+   <div class="map" id="map"></div>
     <div class="container">
       <div class="contacts-block">
         <div class="contacts">
@@ -409,20 +408,20 @@
     });
   </script>
   <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
       var client = $('.footer');
       var clientTop = client.offset().top;
       $(window).bind('scroll', function () {
         var windowTop = $(this).scrollTop();
         if (windowTop > clientTop) {
           $('#map').html(
-            '<script type="text/javascript" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ab03207e73a92bda198c1796566cf9b2400b90bba46856595635fe73901ff91&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false%22%3E%22%3E'
+            '<script src="text/javascript" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ab03207e73a92bda198c1796566cf9b2400b90bba46856595635fe73901ff91&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false%22%3E">'
             );
           console.log('докрутили');
           $(window).unbind('scroll');
         }
       });
-    });
+    })
   </script>
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
@@ -441,7 +440,7 @@
       webvisor: true,
       trackHash: true
     });
-  </script> 
+  </script>
   <noscript>
     <div><img src="https://mc.yandex.ru/watch/53992645" style="position:absolute; left:-9999px;" alt="" /></div>
   </noscript> <!-- /Yandex.Metrika counter -->
