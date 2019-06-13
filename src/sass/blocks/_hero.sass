@@ -18,7 +18,7 @@
    display: inline-block
    font-size: 20px
    +bold
-   margin-bottom: 0px
+   margin-bottom: 65px
  &-image
   max-width: 570px
   width: 50%
@@ -26,7 +26,7 @@
   width: 100%
   box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05)
  &-list
-  margin-top: 65px
+  margin: 0
   padding: 0
   list-style: none
   &__item
@@ -51,27 +51,57 @@
    font-size: 14px
    line-height: 24px 
 @media (max-width: 1200px)
- .hero
-  &-block
-   flex-direction: column
-  &-list
-   margin-bottom: 44px
-  &-text
-   padding-right: 10px
+  .hero
+    &-block
+      flex-direction: column
+      align-items: center
+    &-list
+      display: flex
+      justify-content: space-between
+      &__item
+        align-items: flex-start
+        padding-right: 10px
+      &__image
+        max-height: 40px
+        max-width: 40px
+        width: 100%
+        margin-right: 20px
+      &__text
+        max-width: 200px
 @media (max-width: 768px)
- .hero
-  &-text
-   &__title     
-    font-size: 24px
-    line-height: 1.4
-    margin-bottom: 13px
-   &__subtitle
-    font-size: 16px
-    margin-bottom: 28px 
-  &-list
-   &__item
-    margin-bottom: 20px
-   &__text
-    font-size: 12px
-   &__image
-    margin-right: 15px
+  .hero
+    padding-top: 30px
+    padding-bottom: 50px
+    &-block
+      flex-direction: column
+      align-items: center
+    &-image
+      padding-left: 0
+      padding-right: 5px
+      width: 100%
+    &-text
+      padding-right: 0
+      &__title
+        margin-bottom: 8px
+        margin-top: 10px
+        font-size: 24px
+        line-height: 30px
+      &__subtitle
+        font-size: 16px
+        margin-bottom: 28px
+    &-list
+      display: flex
+      flex-direction: column
+      margin-bottom: 38px
+      &__item
+        align-items: center
+        margin-bottom: 20px
+        &:nth-child(2)
+          margin-bottom: 20px
+      &__image
+        margin-right: 15px
+      &__text
+        font-size: 12px
+        max-width: 200px
+        line-height: 15px
+        padding-top: 6px

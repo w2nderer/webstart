@@ -5,30 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
-    (function (m, e, t, r, i, k, a) {
-      m[i] = m[i] || function () {
-        (m[i].a = m[i].a || []).push(arguments)
-      };
-      m[i].l = 1 * new Date();
-      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
-        a)
-    })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
-    ym(53992645, "init", {
-      clickmap: true,
-      trackLinks: true,
-      accurateTrackBounce: true,
-      webvisor: true,
-      trackHash: true
-    });
-  </script> <noscript>
-    <div><img src="https://mc.yandex.ru/watch/53992645" style="position:absolute; left:-9999px;" alt="" /></div>
-  </noscript> <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
@@ -42,7 +19,7 @@
         <div class="navbar__info">
           <div class="navbar__contacts">
             <span class="navbar__address">Калуга, Москва, МО</span>
-            <a href="tel:+7 (495) 42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
+            <a href="tel:+74954225131" class="navbar__phone">+7 (495) 42-251-31</a>
           </div>
           <button class="button navbar__button wow bounce" onclick="ym(53992645, 'reachGoal', 'button'); return true;"
             id="button"> Перезвоните мне</button>
@@ -107,7 +84,8 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного
             дизайн-проекта!</span>
           <!-- /.section-subtitle -->
-          <form action="#" class="form offer__form" onSubmit="yaCounter53992645.reachGoal('button-form');" id="offer-form">
+          <form action="#" class="form offer__form" onSubmit="yaCounter53992645.reachGoal('button-form');"
+            id="offer-form">
             <div class="offer-form__wrap">
               <div class="offer-form__input">
                 <input type="text" name="username" required class="input offer__input" placeholder="Ваше имя">
@@ -287,8 +265,6 @@
                 placeholder="Ваше Имя">
               <input type="tel" name="phone" required class="input brif__input phone wow fadeInRight"
                 placeholder="Ваш телефон">
-              <input type="email" name="email" required class="input brif__input wow fadeInRight"
-                placeholder="Ваш E-mail">
               <button class="button brif__button wow fadeInRight">Узнать стоимоть</button>
               <span class="form__discription">Мы перезвоним Вам в течение 60 секунд</span>
             </form>
@@ -304,9 +280,6 @@
   </main>
   <footer class="footer">
     <div class="map" id="map">
-      <script type="text/javascript" charset="utf-8" async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ab03207e73a92bda198c1796566cf9b2400b90bba46856595635fe73901ff91&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false">
-      </script>
     </div>
     <div class="container">
       <div class="contacts-block">
@@ -375,10 +348,6 @@
           },
           phone: {
             phone: true
-          },
-          email: {
-            required: true,
-            email: true
           }
         },
         messages: {
@@ -388,12 +357,7 @@
           },
           phone: {
             required: "Введите номер"
-          },
-          email: {
-            required: "Введите E-mail",
-            email: "Введите корректный E-mail"
           }
-
         }
       });
       $("#offer-form").validate({
@@ -443,7 +407,41 @@
       });
     });
   </script>
-
+  <script>
+    var client = $('.footer');
+    var clientTop = client.offset().top;
+    $(window).bind('scroll', function () {
+      var windowTop = $(this).scrollTop();
+      if (windowTop > clientTop) {
+        $('#map').html(
+          '<script type="text/javascript" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ab03207e73a92bda198c1796566cf9b2400b90bba46856595635fe73901ff91&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false%22%3E">'
+          );
+        console.log('докрутили');
+        $(window).unbind('scroll');
+      }
+    });
+  </script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+        a)
+    })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+    ym(53992645, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+      trackHash: true
+    });
+  </script> 
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/53992645" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript> <!-- /Yandex.Metrika counter -->
 </body>
 
 </html>
