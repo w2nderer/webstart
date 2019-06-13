@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
+  <title>Ремонт квартир</title>
 </head>
 
 <body>
@@ -408,17 +409,19 @@
     });
   </script>
   <script>
-    var client = $('.footer');
-    var clientTop = client.offset().top;
-    $(window).bind('scroll', function () {
-      var windowTop = $(this).scrollTop();
-      if (windowTop > clientTop) {
-        $('#map').html(
-          '<script type="text/javascript" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ab03207e73a92bda198c1796566cf9b2400b90bba46856595635fe73901ff91&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false%22%3E">'
-          );
-        console.log('докрутили');
-        $(window).unbind('scroll');
-      }
+    $(document).ready(function(){
+      var client = $('.footer');
+      var clientTop = client.offset().top;
+      $(window).bind('scroll', function () {
+        var windowTop = $(this).scrollTop();
+        if (windowTop > clientTop) {
+          $('#map').html(
+            '<script type="text/javascript" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ab03207e73a92bda198c1796566cf9b2400b90bba46856595635fe73901ff91&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false%22%3E%22%3E'
+            );
+          console.log('докрутили');
+          $(window).unbind('scroll');
+        }
+      });
     });
   </script>
   <!-- Yandex.Metrika counter -->
