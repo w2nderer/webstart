@@ -1763,10 +1763,13 @@ img {
 @media (max-width: 425px) {
   .contacts {
     padding-left: 0;
+    padding-top: 45px;
   }
   .contacts__title {
-    font-size: 19px;
+    margin-bottom: 32px;
+    font-size: 18px;
     text-align: left;
+    line-height: 21px;
   }
   .contacts-list {
     display: -webkit-box;
@@ -1779,6 +1782,15 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .contacts-list__item {
+    margin-bottom: 31px;
+  }
+  .contacts-list__icon {
+    margin-right: 12px;
+  }
+  .map {
+    margin-top: 12px;
   }
 }
 

@@ -39,33 +39,42 @@
    b
     +bold
 @media (max-width: 1050px)
- .contacts
-  padding-left: 60px
+  .contacts
+    padding-left: 60px
 @media (max-width: 768px)
- .footer
-  display: flex
-  flex-direction: column-reverse
- .map
-  position: relative
-  width: 100%
- .contacts
-  padding-left: 0
-  padding-top: 67px
-  flex-basis: 100%
-  &__title
-   margin-bottom: 39px
-   text-align: center
-  &-list
-   display: flex
-   flex-direction: column
-   align-items: center
+  .footer
+    display: flex
+    flex-direction: column-reverse
+  .map
+    position: relative
+    width: 100%
+  .contacts
+    padding-left: 0
+    padding-top: 67px
+    flex-basis: 100%
+    &__title
+      margin-bottom: 39px
+      text-align: center
+    &-list
+      display: flex
+      flex-direction: column
+      align-items: center
 @media (max-width: 425px)
- .contacts
-  padding-left: 0
-  &__title
-   font-size: 19px
-   text-align: left
-  &-list
-   display: flex
-   flex-direction: column
-   align-items: flex-start
+  .contacts
+    padding-left: 0
+    padding-top: 45px
+    &__title
+      margin-bottom: 32px
+      font-size: 18px
+      text-align: left
+      line-height: 21px
+    &-list
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      &__item
+        margin-bottom: 31px
+      &__icon
+        margin-right: 12px
+  .map
+    margin-top: 12px

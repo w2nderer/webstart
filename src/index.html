@@ -280,7 +280,9 @@
 
   </main>
   <footer class="footer">
-   <div class="map" id="map"></div>
+    <div class="map" id="map">
+
+    </div>
     <div class="container">
       <div class="contacts-block">
         <div class="contacts">
@@ -408,20 +410,25 @@
     });
   </script>
   <script>
-    $(document).ready(function () {
-      var client = $('.footer');
-      var clientTop = client.offset().top;
-      $(window).bind('scroll', function () {
-        var windowTop = $(this).scrollTop();
-        if (windowTop > clientTop) {
-          $('#map').html(
-            '<script src="text/javascript" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ab03207e73a92bda198c1796566cf9b2400b90bba46856595635fe73901ff91&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false%22%3E">'
-            );
-          console.log('докрутили');
-          $(window).unbind('scroll');
+    YaMapsShown = false;
+
+    $(window).scroll(function () {
+      if (!YaMapsShown) {
+        if ($(window).scrollTop() + $(window).height() > $(document).height() - 600) {
+          showYaMaps();
+          YaMapsShown = true;
         }
-      });
-    })
+      }
+    });
+
+
+    function showYaMaps() {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src =
+        "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2f6f5688299a6c7654150ce4b97e58be207fc31e40e14b651063ded431d324ee&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false";
+      document.getElementById("map").appendChild(script);
+    };
   </script>
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">

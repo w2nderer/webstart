@@ -10,4 +10,3 @@ close.addEventListener("click",function() {
  modal.classList.remove("modal_active");
 
 });
-
