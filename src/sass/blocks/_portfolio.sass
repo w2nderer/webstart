@@ -2,12 +2,12 @@
  background: $hero-color url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left
  background-size: 50%
  &__title
-  max-width: 800px
+  max-width: 805px
   margin: auto
   font-size: 30px
   line-height: 45px
   color: $text-color
-  padding-bottom: 99px
+  padding-bottom: 92px
  &__arrows
   max-width: 120px
   margin: auto
@@ -17,3 +17,22 @@
 .slider
  &__image
   margin: auto
+@media (max-width: 1200px)
+  .portfolio
+    padding-top: 41px
+    padding-bottom: 60px
+    &__title
+      margin-bottom: 40px
+      font-size: 24px
+      line-height: 35px
+    &__arrows
+      margin-top: 47px
+@media (max-width: 768px)
+  .portfolio
+    &__title
+      font-size: 18px
+      line-height: 21px
+@media (max-width: 321px)      
+  .slider__image
+    height: 186px
+    margin-left: 13px

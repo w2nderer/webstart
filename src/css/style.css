@@ -407,7 +407,7 @@ img {
 }
 
 .section {
-  padding: 150px 0;
+  padding: 90px 0;
 }
 
 .section-title {
@@ -891,6 +891,7 @@ img {
 .navbar__button {
   margin-left: 30px;
   font-size: 13px;
+  outline: none;
 }
 
 .navbar__phone {
@@ -912,6 +913,25 @@ img {
     padding: 15px 26px;
   }
   .navbar__logo {
+    width: 90px;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar {
+    padding: 14px 0;
+  }
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    padding: 15px 26px;
+    margin-bottom: 2px;
+    font-size: 10px;
+    border-radius: 7px;
+  }
+  .navbar__logo {
+    margin-top: 3px;
     width: 90px;
   }
 }
@@ -1050,7 +1070,7 @@ img {
 @media (max-width: 768px) {
   .hero {
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 47px;
   }
   .hero-block {
     -webkit-box-orient: vertical;
@@ -1072,12 +1092,14 @@ img {
   .hero-text__title {
     margin-bottom: 8px;
     margin-top: 10px;
+    margin-left: 2px;
     font-size: 24px;
     line-height: 30px;
   }
   .hero-text__subtitle {
+    margin-bottom: 27px;
+    margin-left: 5px;
     font-size: 16px;
-    margin-bottom: 28px;
   }
   .hero-list {
     display: -webkit-box;
@@ -1088,6 +1110,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 38px;
+    margin-left: 2px;
   }
   .hero-list__item {
     -webkit-box-align: center;
@@ -1102,10 +1125,10 @@ img {
     margin-right: 15px;
   }
   .hero-list__text {
-    font-size: 12px;
-    max-width: 200px;
-    line-height: 15px;
     padding-top: 6px;
+    max-width: 200px;
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 
@@ -1152,6 +1175,7 @@ img {
           align-items: center;
   width: 100%;
   width: 240px;
+  outline: none;
 }
 
 .offer-block {
@@ -1176,6 +1200,7 @@ img {
 .offer__input {
   margin-bottom: 10px;
   width: 240px;
+  outline: none;
 }
 
 .offer__input:first-child {
@@ -1186,6 +1211,7 @@ img {
   margin-top: 20px;
   width: 100%;
   min-height: 70px;
+  outline: none;
 }
 
 .offer-contacts {
@@ -1227,17 +1253,81 @@ img {
     margin-bottom: 10px;
   }
   .offer__button {
-    font-size: 14px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 930px) {
+  .offer__button {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 810px) {
+  .offer__button {
+    padding: 18px 30px;
+  }
+  .offer__notification {
+    max-width: 100%;
+    margin-top: 10px;
   }
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: 35px 0;
+  }
   .offer {
     background: #ffffff;
   }
   .offer-block {
     width: 100%;
     padding-right: 0;
+  }
+  .offer__title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 19px;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+    margin-bottom: 17px;
+  }
+  .offer__notification {
+    margin-top: 23px;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 390px) {
+  .offer__button {
+    font-size: 14px;
+  }
+  .offer__notification {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 354px) {
+  .offer {
+    padding-bottom: 51px;
+  }
+  .offer__input:first-child {
+    margin-bottom: -2px;
+  }
+  .offer__button {
+    padding: 0 60px;
+  }
+  .offer__notification {
+    max-width: 100%;
+    width: 250px;
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+  .offer__notification:first-child {
+    margin-top: 21px;
+    margin-bottom: -3px;
   }
 }
 
@@ -1248,12 +1338,12 @@ img {
 }
 
 .portfolio__title {
-  max-width: 800px;
+  max-width: 805px;
   margin: auto;
   font-size: 30px;
   line-height: 45px;
   color: #333333;
-  padding-bottom: 99px;
+  padding-bottom: 92px;
 }
 
 .portfolio__arrows {
@@ -1272,6 +1362,35 @@ img {
   margin: auto;
 }
 
+@media (max-width: 1200px) {
+  .portfolio {
+    padding-top: 41px;
+    padding-bottom: 60px;
+  }
+  .portfolio__title {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .portfolio__arrows {
+    margin-top: 47px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio__title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 321px) {
+  .slider__image {
+    height: 186px;
+    margin-left: 13px;
+  }
+}
+
 /* Стили для блока price */
 .price {
   padding-top: 100px;
@@ -1280,9 +1399,9 @@ img {
 .price__title {
   max-width: 515px;
   margin: auto;
-  font-size: 30px;
+  font-size: 29px;
   line-height: 45px;
-  padding-bottom: 58px;
+  padding-bottom: 33px;
 }
 
 .price__subtitle {
@@ -1290,7 +1409,7 @@ img {
   margin: auto;
   font-size: 20px;
   line-height: 45px;
-  padding-bottom: 59px;
+  padding-bottom: 49px;
 }
 
 .price__card {
@@ -1314,7 +1433,7 @@ img {
 }
 
 .card__text {
-  padding: 40px;
+  padding: 28px;
 }
 
 .card__title {
@@ -1394,6 +1513,45 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .price {
+    padding-bottom: 0;
+  }
+  .price__title {
+    font-size: 18px;
+    line-height: 20px;
+    max-width: 242px;
+    padding-bottom: 0;
+    margin-bottom: 27px;
+  }
+  .price__subtitle {
+    padding-bottom: 0;
+    margin-bottom: 61px;
+    margin-right: 18px;
+    font-size: 14px;
+  }
+  .card {
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+  .card:nth-child(2) {
+    margin-bottom: 29px;
+  }
+  .card:nth-child(3) {
+    margin-bottom: 29px;
+  }
+  .card:nth-child(5) {
+    margin-bottom: 28px;
+  }
+  .card__text {
+    padding: 29px 24px 33px 26px;
+  }
+  .card__title {
+    margin-bottom: 13px;
+    font-size: 14px;
+  }
+}
+
 /* Стили для блока brif */
 .brif {
   margin-top: 35px;
@@ -1426,6 +1584,7 @@ img {
   max-width: 370px;
   margin-top: 10px;
   margin-bottom: 10px;
+  outline: none;
 }
 
 .brif__button {
@@ -1434,6 +1593,7 @@ img {
   max-width: 370px;
   margin-top: 17px;
   margin-bottom: 30px;
+  outline: none;
 }
 
 .interview {
@@ -1441,8 +1601,9 @@ img {
 }
 
 .interview__title {
+  margin-top: 10px;
   margin-bottom: 45px;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 31px;
   font-family: "Museo Sans Bold", sans-serif;
   font-weight: 700;
@@ -1466,7 +1627,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 31px;
   font-family: "Museo Sans Bold", sans-serif;
   font-weight: 700;
 }
@@ -1484,7 +1645,7 @@ img {
 }
 
 .interview-list__text {
-  font-size: 18px;
+  font-size: 17px;
   max-width: 390px;
 }
 
@@ -1656,13 +1817,13 @@ img {
 .contacts {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-top: 100px;
-  padding-left: 200px;
+  padding-top: 68px;
+  padding-left: 210px;
 }
 
 .contacts__title {
-  margin-bottom: 100px;
-  font-size: 22px;
+  margin-bottom: 93px;
+  font-size: 24px;
   line-height: 33px;
   font-family: "Museo Sans Bold", sans-serif;
   font-weight: 700;
@@ -1687,7 +1848,7 @@ img {
   height: 20px;
   line-height: 20px;
   text-align: center;
-  margin-right: 23px;
+  margin-right: 25px;
 }
 
 .contacts-list__item {
@@ -1701,12 +1862,14 @@ img {
 }
 
 .contacts-list__text {
+  font-size: 16px;
   line-height: 26px;
 }
 
 .contacts-list__text a {
   text-decoration: none;
   color: #333333;
+  outline: none;
   font-family: "Museo Sans Bold", sans-serif;
   font-weight: 700;
 }
